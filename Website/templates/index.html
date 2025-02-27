@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+
+  <body>
+    <h1>Translator</h1>
+    <h2>
+      Here you can seamlessly translate from one language to another from any
+      format
+    </h2>
+    <div class="input-boxes">
+      <div class="input-box" onclick="showInput('text-input')">
+        <img
+          src="https://w7.pngwing.com/pngs/770/995/png-transparent-computer-icons-text-file-tiff-plain-text-tiff-text-logo-sign.png"
+          alt="Text File"
+        />
+        <p>Text</p>
+      </div>
+      <div class="input-box" onclick="showInput('image-input')">
+        <img
+          src="https://pixsector.com/cache/517d8be6/av5c8336583e291842624.png"
+          alt="Image File"
+        />
+        <p>Image</p>
+      </div>
+      <div class="input-box" onclick="showInput('audio-input')">
+        <img
+          src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png"
+          alt="Microphone"
+        />
+        <p>Audio</p>
+      </div>
+    </div>
+
+    <div id="text-input" style="display: none">
+      <form action="/translate_text" method="POST">
+        <input
+          type="text"
+          name="text_input"
+          placeholder="Enter text to translate"
+        />
+        <input type="hidden" name="input_type" value="text" />
+        <input
+          type="text"
+          name="target_language"
+          placeholder="Target language code"
+        />
+        <button type="submit">Translate Text</button>
+      </form>
+    </div>
+
+    <div id="image-input" style="display: none">
+      <form action="/translate_text" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image_file" accept=".jpg, .jpeg, .png" />
+        <input type="hidden" name="input_type" value="image" />
+        <input
+          type="text"
+          name="target_language"
+          placeholder="Target language code"
+        />
+        <button type="submit">Translate Image</button>
+      </form>
+    </div>
+
+    <div id="translation-result"></div>
+
+    <div id="audio-input" style="display: none">
+      <form action="/translate_text" method="POST">
+        <input type="hidden" name="input_type" value="audio" />
+        <input
+          type="text"
+          name="target_language"
+          placeholder="Target language code"
+        />
+        <button type="submit">Start Listening</button>
+      </form>
+    </div>
+
+    <div id="translation-result">
+      <h3>Translated Text</h3>
+      <p>{{ translated_text }}</p>  
+    </div>
+
+    <script>
+      function showInput(inputId) {
+        var elements = document.getElementsByClassName("input-box");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.display = "none";
+        }
+        document.getElementById(inputId).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
