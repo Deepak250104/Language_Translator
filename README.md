@@ -14,7 +14,7 @@ All methods utilize the Google Translate API (via `googletrans`) for accurate an
 
 ## Files
 
-* **`main.py`**: The main Python script that implements text, speech, and image translation through command line.
+* **`pytrans.py`**: The main Python script that implements text, speech, and image translation through command line.
 * **`tkinter_speech_translation.py`**: A Python script using Tkinter for speech-to-speech translation.
 * **`web_translator.py`**: A Flask web application providing a comprehensive translation interface.
 * **`templates/`**: Contains HTML templates for the web interface.
