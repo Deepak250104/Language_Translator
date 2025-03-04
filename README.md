@@ -95,9 +95,9 @@ All methods utilize the Google Translate API (via `googletrans`) for accurate an
 
 * Command-Line Translation
 
-![alt text](<Images/Audio input-1.png>) 
+![alt text](<Images/Audio input.png>) 
 
-![alt text](<Images/Text input-1.png>)
+![alt text](<Images/Text input.png>)
 
 
 * Speech Translation (Tkinter GUI)
