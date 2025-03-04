@@ -92,7 +92,8 @@ All methods utilize the Google Translate API (via `googletrans`) for accurate an
 
 ## Language Codes
 
-For a list of language codes supported by `googletrans`, refer to: [https://py-googletrans.readthedocs.io/en/latest/src/googletrans.html#googletrans-languages](https://py-googletrans.readthedocs.io/en/latest/src/googletrans.html#googletrans-languages)
+For a list of language codes supported by `googletrans`, refer to: 
+https://developers.google.com/admin-sdk/directory/v1/languages
 
 ## Notes
 
