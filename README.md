@@ -107,4 +107,4 @@ https://developers.google.com/admin-sdk/directory/v1/languages
 
 ## License
 
-This project is open-source.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
