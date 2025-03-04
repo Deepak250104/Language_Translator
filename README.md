@@ -49,7 +49,7 @@ All methods utilize the Google Translate API (via `googletrans`) for accurate an
 
 3.  **Install Tesseract-OCR:**
 
-    * Download and install Tesseract-OCR from [https://github.com/UB-Mannheim/tesseract/wiki](https://github.com/UB-Mannheim/tesseract/wiki).
+    * Download and install Tesseract-OCR from [here](https://github.com/UB-Mannheim/tesseract/wiki).
     * Add the Tesseract-OCR installation directory to your system's PATH or environment variables. This enables `pytesseract` to locate the Tesseract executable.
 
 ## Usage
