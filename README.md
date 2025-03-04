@@ -54,12 +54,12 @@ All methods utilize the Google Translate API (via `googletrans`) for accurate an
 
 ## Usage
 
-### Command-Line Translation (`main.py`)
+### Command-Line Translation (`pytrans.py`)
 
-1.  Run the `main.py` script:
+1.  Run the `pytrans.py` script:
 
     ```bash
-    python main.py
+    python pytrans.py
     ```
 
 2.  Follow the prompts to translate text, speech, or images.
@@ -88,7 +88,18 @@ All methods utilize the Google Translate API (via `googletrans`) for accurate an
 
 ## Example Images
 
-(Add sample images here, showing the different interfaces and functionalities)
+* Web Translation
+![alt text](images/Homepage.png)
+
+* Command-Line Translation
+![alt text](<images/Text input.png>)
+![alt text](<images/Audio input.png>)
+
+* Speech Translation (Tkinter GUI)
+![alt text](<GUI 2.png>) 
+![alt text](GUI.png)
+
+
 
 ## Language Codes
 
