@@ -90,21 +90,21 @@ All methods utilize the Google Translate API (via `googletrans`) for accurate an
 
 * Web Translation
 
-![alt text](<Homepage.png>)
+![alt text](<Images/Homepage.png>)
 
 
 * Command-Line Translation
 
-![alt text](<Audio input-1.png>) 
+![alt text](<Images/Audio input-1.png>) 
 
-![alt text](<Text input-1.png>)
+![alt text](<Images/Text input-1.png>)
 
 
 * Speech Translation (Tkinter GUI)
 
-![alt text](<GUI 2.png>) 
+![alt text](<Images/GUI 2.png>) 
 
-![alt text](GUI.png)
+![alt text](Images/GUI.png)
 
 
 
